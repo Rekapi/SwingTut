@@ -4,14 +4,14 @@ import javax.swing.SwingUtilities;
 public class App {
 
 	public static void main(String[] args) {
-		// Simple JFrame 
+		// Simple JFrame part 1
 
 		// 4. Thread 
 		SwingUtilities.invokeLater(new Runnable() {
 
 			@Override
 			public void run() {
-				JFrame frame = new JFrame("Hello World !");
+				JFrame frame = new MainFrame("Hello World !");
 				// 1. set size 
 				frame.setSize(500, 400);
 				// 2. set close operation
@@ -20,5 +20,6 @@ public class App {
 				frame.setVisible(true);
 			}
 		});
+		// Adding component part 2 - adding new class
 	}
 }
